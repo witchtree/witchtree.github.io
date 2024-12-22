@@ -1,1 +1,70 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witch Tree Brewing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            width: 250px;
+            height: 250px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 100%;
+            height: 83%;         
+            object-fit: contain; /* Ensure the image maintains its aspect ratio */
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="social-icons">
+            <a href="https://untappd.com/b/witch-tree-brewing-company-vanilla-gorilla-honey-vanilla-blonde/5954299" target="_blank"><i class="fab fa-untappd"></i></a>
+            <a href="https://www.instagram.com/witchtreebrewing" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/witchtreebrewing" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+</body>
+</html>
