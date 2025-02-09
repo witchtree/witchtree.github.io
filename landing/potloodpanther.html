@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potlood Pänther Strong Dark Ale</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="../resources/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../resources/favicon.svg" />
+    <link rel="shortcut icon" href="../resources/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../resources/apple-touch-icon.png" />
+    <link rel="manifest" href="../resources/site.webmanifest" />
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('potloodpanther.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            width: 250px;
+            height: 250px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 83%;
+            object-fit: contain;
+            /* Ensure the image maintains its aspect ratio */
+        }
+
+        .content {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .donation-link {
+            display: inline-block;
+            padding: 15px 25px;
+            margin-top: 20px;
+            background-color: #ffcc00;
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .donation-link:hover {
+            background-color: #ff9900;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .cookie-banner button {
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJNE68RBYV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        function initGoogleAnalytics() {
+            gtag('config', 'G-RJNE68RBYV');
+        }
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied'
+        });
+
+        function allConsentGranted() {
+            gtag('consent', 'update', {
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted',
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted'
+            });
+        }
+
+
+        function acceptCookies() {
+            document.cookie = "cookies_accepted=true; max-age=" + 60 * 60 * 24 * 365 + "; path=/";
+            document.getElementById('cookie-banner').style.display = 'none';
+            initGoogleAnalytics();
+        }
+
+        window.onload = function () {
+            initGoogleAnalytics();
+            if (document.cookie.indexOf('cookies_accepted=true') === -1) {
+                document.getElementById('cookie-banner').style.display = 'block';
+            } else {
+                allConsentGranted()
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="../resources/logo.png" alt="Logo">
+        </div>
+        <div class="content">
+            <p>Wat tof dat je de QR code op dit biertje hebt gescand!</p>
+            <h1>Potlood Pänther Strong Dark Ale</h1>
+            <p>Leuk he? De hele tijd gratis bier van ons krijgen. Het is je van harte gegund. Ondertussen lopen bij ons
+                de kosten op. De weegschaaltjes, suikerklontjes, letselschade advocaten en maatbekertjes betalen
+                zichzelf niet. We zouden daarom een kleine financiële ondersteuning enorm op prijs stellen!</p>
+            <p>Je kunt via de onderstaande link een zelf te bepalen bedrag doneren. Het betaalverzoek staat op naam van
+                A. F. Bloemhof, we kunnen nog geen echte bankrekening betalen. De tekst kun je wel aanpassen, vinden we leuk. </p>
+            <p>Bij voorbaat dank voor je donatie!</p>
+            <p><a href="https://bunq.me/wtbc/Witch+Tree+Brewing+Donatie" target="_blank" class="donation-link">Klik hier
+                    om een donatie te doen!</a></p>
+            <div class="social-icons">
+                <!--<a href="https://untappd.com/qr/beer/5954299" target="_blank"><i class="fab fa-untappd"></i></a>-->
+                <a href="https://www.instagram.com/witchtreebrewing" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/witchtreebrewing" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="cookie-banner" class="cookie-banner" style="display: none;">
+        Deze website maakt gebruik van cookies om ervoor te zorgen dat u de beste ervaring op onze website krijgt.
+        <button onclick="acceptCookies()">Accepteer</button>
+    </div>
+</body>
+
+</html>
